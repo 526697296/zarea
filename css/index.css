@@ -1,0 +1,119 @@
+.clear{
+    zoom:1;
+}
+.clear:after{
+    content: "";
+    display: block;
+    clear:both;
+}
+a{
+    text-decoration: none;
+}
+/* 主题样式 */
+#main{
+    height: 100%;
+    width: 100%;
+}
+#header{
+    width:100%;
+    height:80px;
+    background: #fff;
+}
+#headerMain{
+    height: 100%;
+    width:1100px;
+    margin:0 auto;
+    position: relative;
+}
+#headerMain .logo{
+    margin-top:30px;
+    float: left;
+}
+#nav{
+    float:right;
+    margin-top: 50px;
+}
+#nav li{
+    float: left;
+    position: relative;
+    margin-right: 40px;
+}
+#nav li .up{
+    position: absolute;
+    left:0;
+    top:0;
+    color:black;
+    width:0;
+    overflow:hidden;
+    transition: .5s width;
+}
+#nav li:hover .up{
+    width:100%;
+}
+#arroew{
+    width:21px;
+    height:11px;
+    background: url("../images/1.png") no-repeat;
+    position: absolute;
+    left:50%;
+    bottom:-11px;
+    transition: 0.5s left;
+   z-index:10;
+}
+
+
+#content{
+    width: 100%;
+    position:relative;
+    overflow: hidden;
+}
+#list{
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    transition: .5s top;
+}
+#list .liList{
+    width:2000px;
+    position: relative;
+    left:50%;
+    margin-left: -1000px;
+    overflow: hidden;
+}
+#list .divList{
+    width: 1100px;
+    height: 520px;
+    background: red;
+    margin: 0 auto;
+}
+/* ==========================
+home页面样式
+========================== */
+#home{
+    background: url("../images/bg1.jpg") no-repeat;
+}
+/* ==========================
+course页面样式
+========================== */
+#course{
+    background: url("../images/bg3.jpg") no-repeat;
+}
+/* ==========================
+works页面样式
+========================== */
+#works{
+    background: url("../images/bg4.jpg") no-repeat;
+}
+/* ==========================
+about页面样式
+========================== */
+#about{
+    background: url("../images/bg5.jpg") no-repeat;
+}
+/* ==========================
+team页面样式
+========================== */
+#team{
+    background: url("../images/bg2.jpg") no-repeat;
+}
